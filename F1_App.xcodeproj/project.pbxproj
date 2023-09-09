@@ -14,6 +14,13 @@
 		BA24D8242AA79B310033224B /* F1_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24D8232AA79B310033224B /* F1_AppTests.swift */; };
 		BA24D82E2AA79B310033224B /* F1_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24D82D2AA79B310033224B /* F1_AppUITests.swift */; };
 		BA24D8302AA79B310033224B /* F1_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24D82F2AA79B310033224B /* F1_AppUITestsLaunchTests.swift */; };
+		BA24D83F2AA7C1040033224B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24D83E2AA7C1040033224B /* SplashScreenView.swift */; };
+		BA24D8432AA8005A0033224B /* DriverListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24D8422AA8005A0033224B /* DriverListView.swift */; };
+		BA24D8452AA810170033224B /* DriverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24D8442AA810170033224B /* DriverModel.swift */; };
+		BA24D8472AA8CEDF0033224B /* DriverProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24D8462AA8CEDF0033224B /* DriverProfileView.swift */; };
+		BA24D8492AAA00CD0033224B /* DriverTeamPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24D8482AAA00CD0033224B /* DriverTeamPair.swift */; };
+		BA24D84C2AAA0D9B0033224B /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = BA24D84B2AAA0D9B0033224B /* URLImage */; };
+		BA24D84E2AAA0D9B0033224B /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = BA24D84D2AAA0D9B0033224B /* URLImageStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,11 @@
 		BA24D8292AA79B310033224B /* F1_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = F1_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA24D82D2AA79B310033224B /* F1_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_AppUITests.swift; sourceTree = "<group>"; };
 		BA24D82F2AA79B310033224B /* F1_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BA24D83E2AA7C1040033224B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		BA24D8422AA8005A0033224B /* DriverListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverListView.swift; sourceTree = "<group>"; };
+		BA24D8442AA810170033224B /* DriverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverModel.swift; sourceTree = "<group>"; };
+		BA24D8462AA8CEDF0033224B /* DriverProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverProfileView.swift; sourceTree = "<group>"; };
+		BA24D8482AAA00CD0033224B /* DriverTeamPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTeamPair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA24D84E2AAA0D9B0033224B /* URLImageStore in Frameworks */,
+				BA24D84C2AAA0D9B0033224B /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +111,14 @@
 			children = (
 				BA24D8112AA79B300033224B /* F1_AppApp.swift */,
 				BA24D8132AA79B300033224B /* ContentView.swift */,
+				BA24D83E2AA7C1040033224B /* SplashScreenView.swift */,
+				BA24D8422AA8005A0033224B /* DriverListView.swift */,
 				BA24D8152AA79B310033224B /* Assets.xcassets */,
+				BA24D8442AA810170033224B /* DriverModel.swift */,
+				BA24D8462AA8CEDF0033224B /* DriverProfileView.swift */,
 				BA24D8172AA79B310033224B /* F1_App.entitlements */,
 				BA24D8182AA79B310033224B /* Preview Content */,
+				BA24D8482AAA00CD0033224B /* DriverTeamPair.swift */,
 			);
 			path = F1_App;
 			sourceTree = "<group>";
@@ -145,6 +164,10 @@
 			dependencies = (
 			);
 			name = F1_App;
+			packageProductDependencies = (
+				BA24D84B2AAA0D9B0033224B /* URLImage */,
+				BA24D84D2AAA0D9B0033224B /* URLImageStore */,
+			);
 			productName = F1_App;
 			productReference = BA24D80E2AA79B300033224B /* F1_App.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +240,9 @@
 				Base,
 			);
 			mainGroup = BA24D8052AA79B300033224B;
+			packageReferences = (
+				BA24D84A2AAA0D9B0033224B /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = BA24D80F2AA79B300033224B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA24D8432AA8005A0033224B /* DriverListView.swift in Sources */,
+				BA24D8472AA8CEDF0033224B /* DriverProfileView.swift in Sources */,
+				BA24D83F2AA7C1040033224B /* SplashScreenView.swift in Sources */,
 				BA24D8142AA79B300033224B /* ContentView.swift in Sources */,
+				BA24D8492AAA00CD0033224B /* DriverTeamPair.swift in Sources */,
 				BA24D8122AA79B300033224B /* F1_AppApp.swift in Sources */,
+				BA24D8452AA810170033224B /* DriverModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,8 +446,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"F1_App/Preview Content\"";
+				DEVELOPMENT_TEAM = CF3KK2966Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "F1 Legacy";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -451,8 +484,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"F1_App/Preview Content\"";
+				DEVELOPMENT_TEAM = CF3KK2966Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "F1 Legacy";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -604,6 +639,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA24D84A2AAA0D9B0033224B /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA24D84B2AAA0D9B0033224B /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA24D84A2AAA0D9B0033224B /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		BA24D84D2AAA0D9B0033224B /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA24D84A2AAA0D9B0033224B /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA24D8062AA79B300033224B /* Project object */;
 }

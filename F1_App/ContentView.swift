@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        ZStack {
+            Color(red: 0.2784313725490196, green: 0.7803921568627451, blue: 0.9882352941176471).ignoresSafeArea()
+            VStack {
+                Image("carSize")
+                    .resizable()
+                    .frame(width: 200, height: 70)
+                Text("F1 Legacy")
+                    .font(.largeTitle.bold())
+                    .foregroundColor(.white)
+            }
         }
-        .padding()
+
+        
     }
 }
 
