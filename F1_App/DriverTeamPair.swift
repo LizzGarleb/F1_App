@@ -16,12 +16,25 @@ struct DriverTeamPair: Identifiable {
 
 let driverTeamPairs: [DriverTeamPair] = [
     
-    DriverTeamPair(driverId: "de_vries", driverTeam: "alphaTauri", driverImg: "https://cdn-8.motorsport.com/images/mgl/2Qz5kRNY/s800/nyck-de-vries-alphatauri-1.jpg"),
+    DriverTeamPair(driverId: "de_vries",
+                   driverTeam: "alphaTauri",
+                   driverImg: "https://cdn-8.motorsport.com/images/mgl/2Qz5kRNY/s800/nyck-de-vries-alphatauri-1.jpg"),
     
-    DriverTeamPair(driverId: "kevin_magnussen", driverTeam: "haas", driverImg: "https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/magnussen.jpg.img.1024.medium.jpg/1677069387823.jpg"),
+    DriverTeamPair(driverId: "kevin_magnussen",
+                   driverTeam: "haas",
+                   driverImg: "https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/magnussen.jpg.img.1024.medium.jpg/1677069387823.jpg"),
     
-    DriverTeamPair(driverId: "ricciardo", driverTeam: "alphaTauri", driverImg: "https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/ricciardo.jpg.img.1024.medium.jpg/1689928543988.jpg"),
+    DriverTeamPair(driverId: "ricciardo",
+                   driverTeam: "alphaTauri",
+                   driverImg: "https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/ricciardo.jpg.img.1024.medium.jpg/1689928543988.jpg"),
     
+    DriverTeamPair(driverId: "latifi",
+                   driverTeam: "williams",
+                   driverImg: "https://static.wikia.nocookie.net/f1wikia/images/9/90/NickLatifi.png/revision/latest/scale-to-width-down/1000?cb=20220310042701"),
+    
+    DriverTeamPair(driverId: "vettel",
+                   driverTeam: "astonMartin",
+                   driverImg: "https://static.wikia.nocookie.net/f1wikia/images/6/61/SebVettel.png/revision/latest?cb=20220310042407"),
     
     DriverTeamPair(driverId: "hamilton",
                    driverTeam: "mercedes",
