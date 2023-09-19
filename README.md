@@ -1,4 +1,6 @@
-# F1 Legacy
+![Banner Image](https://idsb.tmgrup.com.tr/ly/uploads/images/2020/03/20/26192.jpg)
+
+# F1 Legacy</p>
 ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 ![Xcode](https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white)
 
